@@ -54,8 +54,6 @@ bool ComplexNumber::operator==(const ComplexNumber &c){
 	else										return false;
 }
 
-//Write your code here
-
 ostream & operator<<(ostream &os, const ComplexNumber &x){
 	if(x.real != 0 && x.imag > 0)			return os << x.real << "+" << x.imag << "i" ;
 	else if(x.real != 0 && x.imag < 0)		return os << x.real << x.imag << "i" ;
