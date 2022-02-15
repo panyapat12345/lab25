@@ -45,7 +45,7 @@ double ComplexNumber::abs(){
 
 double ComplexNumber::angle(){
 	double arc = atan2(imag, real);		
-	arc = (arc/3.14159265) * 180;			
+	arc = (arc/M_PI) * 180;			
 	return arc;
 }
 
